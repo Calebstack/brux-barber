@@ -48,7 +48,12 @@
     // Update button text
     var toggle = document.getElementById('langToggle');
     if (toggle) {
-      toggle.textContent = lang === 'pl' ? 'Przełącz na angielski' : 'Switch to English';
+      var langText = toggle.querySelector('.lang-text');
+      if (langText) {
+        langText.textContent = lang === 'pl' ? 'Przełącz na angielski' : 'Switch to English';
+      } else {
+        toggle.textContent = lang === 'pl' ? 'Przełącz na angielski' : 'Switch to English';
+      }
     }
 
     // Update html lang attribute

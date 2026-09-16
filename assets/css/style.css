@@ -254,6 +254,15 @@ hr.rule {
 .lang-toggle .lang-text {
   display: inline;
 }
+.lang-toggle svg {
+  margin-right: 0.4em;
+  flex-shrink: 0;
+}
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
 
 /* ---------- Header / Nav ---------- */
 header.site-header {
